@@ -1,0 +1,209 @@
+/**
+ * @Author: jecyu
+ * @Date: 2017-12-19 4:42:58 pm 
+ * @Modified By: jeCyu 
+ * @Last Modified time: 2017-12-21 11:38:44 am 
+ */
+.main {
+  width: 10rem;
+}
+
+/* banner */
+.banner {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2.2666666667rem;
+  background: lightblue url(../images/banner-1.png) no-repeat;
+  background-size: cover;
+}
+.banner .banner-title {
+  position: relative;
+  font-size: 18px;
+  color: #fff;
+  /* underline */
+}
+[data-dpr="2"] .banner .banner-title {
+  font-size: 36px;
+}
+[data-dpr="3"] .banner .banner-title {
+  font-size: 54px;
+}
+.banner .banner-title::before {
+  content: '';
+  position: absolute;
+  bottom: -40%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 0.0666666667rem;
+  width: 0.6133333333rem;
+  border-radius: 0.0666666667rem;
+  background: #fff;
+}
+
+/* main section */
+.item-section {
+  position: relative;
+  min-height: 100%;
+  padding: 0.8rem;
+  color: #747474;
+  border-bottom: 0.16rem solid #e6e6e6;
+  border-top: 0.16rem solid #e6e6e6;
+}
+.item-section .opera-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1.6rem;
+  font-size: 16px;
+}
+[data-dpr="2"] .item-section .opera-container {
+  font-size: 32px;
+}
+[data-dpr="3"] .item-section .opera-container {
+  font-size: 48px;
+}
+.item-section .iconfont {
+  font-size: 16px;
+}
+[data-dpr="2"] .item-section .iconfont {
+  font-size: 32px;
+}
+[data-dpr="3"] .item-section .iconfont {
+  font-size: 48px;
+}
+
+input[type="checkbox"] {
+  width: 0.4rem;
+  height: 0.4rem;
+  vertical-align: middle;
+}
+
+label {
+  vertical-align: middle;
+}
+
+/* method-list */
+.method-item {
+  padding-bottom: 1.1466666667rem;
+  border-bottom: 0.0133333333rem solid #747474;
+}
+.method-item + .method-item {
+  margin-top: 0.8rem;
+}
+.method-item .item-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5333333333rem;
+  font-size: 16px;
+}
+[data-dpr="2"] .method-item .item-header {
+  font-size: 32px;
+}
+[data-dpr="3"] .method-item .item-header {
+  font-size: 48px;
+}
+.method-item .item-header .item-title {
+  font-size: 16px;
+  color: #234755;
+}
+[data-dpr="2"] .method-item .item-header .item-title {
+  font-size: 32px;
+}
+[data-dpr="3"] .method-item .item-header .item-title {
+  font-size: 48px;
+}
+
+/* item body */
+.item-body {
+  margin-top: 0.8rem;
+}
+.item-body .user-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.item-body .user-item .user-label {
+  display: block;
+  padding: 0.24rem 0;
+  color: #234755;
+}
+.item-body .user-item .user-input {
+  width: 100%;
+  height: 1.0666666667rem;
+  padding-left: 0.2666666667rem;
+  border: 0.0133333333rem solid #747474;
+  color: #747474;
+  outline: none;
+}
+.item-body .user-btn {
+  width: 100%;
+  height: 1.0666666667rem;
+  margin-top: 0.8533333333rem;
+  border: 0;
+  font-size: 12px;
+  color: #fff;
+  background: #234755;
+}
+[data-dpr="2"] .item-body .user-btn {
+  font-size: 24px;
+}
+[data-dpr="3"] .item-body .user-btn {
+  font-size: 36px;
+}
+.item-body .user-link {
+  margin-top: 0.2666666667rem;
+  text-align: center;
+}
+.item-body .user-policy {
+  margin-top: 0.4rem;
+}
+.item-body .user-policy a {
+  color: #234755;
+}
+
+/* method footer */
+.method-footer {
+  margin-top: 0.7733333333rem;
+  text-align: center;
+}
+.method-footer .title {
+  margin-bottom: 0.2666666667rem;
+}

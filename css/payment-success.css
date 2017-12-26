@@ -1,0 +1,80 @@
+/**
+ * @Author: jecyu
+ * @Date: 2017-12-25 10:05:49 am 
+ * @Modified By: jeCyu 
+ * @Last Modified time: 2017-12-25 6:03:30 pm 
+ */
+.main {
+  width: 10rem;
+}
+
+/* banner */
+.banner {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.16rem;
+  height: 2.2666666667rem;
+  background: lightblue url(../images/banner-1.png) no-repeat;
+  background-size: cover;
+}
+.banner .banner-title {
+  position: relative;
+  font-size: 18px;
+  color: #fff;
+  /* underline */
+}
+[data-dpr="2"] .banner .banner-title {
+  font-size: 36px;
+}
+[data-dpr="3"] .banner .banner-title {
+  font-size: 54px;
+}
+.banner .banner-title::before {
+  content: "";
+  position: absolute;
+  bottom: -40%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 0.0666666667rem;
+  width: 0.6133333333rem;
+  border-radius: 0.0666666667rem;
+  background: #fff;
+}
+
+/* main section */
+.item-section {
+  position: relative;
+  min-height: 100%;
+  border-bottom: 0.16rem solid #e6e6e6;
+  background: #fff;
+  color: #747474;
+  /* delivery-notice */
+}
+.item-section.delivery-notice {
+  color: #234755;
+  height: 2.5866666667rem;
+  text-align: center;
+}
+.item-section.delivery-notice .message {
+  padding: 0.6666666667rem 0;
+  font-size: 16px;
+}
+[data-dpr="2"] .item-section.delivery-notice .message {
+  font-size: 32px;
+}
+[data-dpr="3"] .item-section.delivery-notice .message {
+  font-size: 48px;
+}
