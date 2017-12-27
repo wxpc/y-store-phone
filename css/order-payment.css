@@ -2,7 +2,7 @@
  * @Author: jecyu
  * @Date: 2017-12-25 3:43:39 pm 
  * @Modified By: jeCyu 
- * @Last Modified time: 2017-12-25 6:01:36 pm 
+ * @Last Modified time: 2017-12-26 5:51:29 pm 
  */
 .main {
   width: 10rem;
@@ -107,7 +107,7 @@
 
 .content-6 {
   width: 100%;
-  height: 600px;
+  height: 8rem;
   margin: 0 auto;
   padding: 0.5333333333rem 0.8rem;
   font-size: 18px;
@@ -134,7 +134,7 @@
 
 .content-7 {
   width: 100%;
-  height: 200px;
+  height: 2.6666666667rem;
   margin: 0 auto;
   font-size: 18px;
   background: #e6e6e6;
@@ -146,8 +146,7 @@
   font-size: 54px;
 }
 .content-7 p {
-  width: 750px;
-  margin-left: 50px;
+  margin-left: 0.6666666667rem;
   padding-top: 0.4rem;
   font-size: 14px;
   line-height: 0.9333333333rem;
@@ -210,7 +209,7 @@
 
 .content-10 {
   width: 100%;
-  height: 160px;
+  height: 2.1333333333rem;
   margin: 0.6666666667rem auto;
   border-bottom: 0.0266666667rem solid #b4b4b4;
 }
@@ -232,19 +231,34 @@
 
 .content-11 {
   width: 100%;
-  height: 300px;
+  height: 3.3333333333rem;
   margin: 0.4rem auto;
   padding-bottom: 0.6666666667rem;
   border-bottom: 0.0266666667rem solid #b4b4b4;
-  font-size: 16px;
+  font-size: 14px;
   color: #747474;
   font-weight: 300;
 }
 [data-dpr="2"] .content-11 {
-  font-size: 32px;
+  font-size: 28px;
 }
 [data-dpr="3"] .content-11 {
-  font-size: 48px;
+  font-size: 42px;
+}
+.content-11 .item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.content-11 .item .item-count,
+.content-11 .item .item-total {
+  display: inline-block;
+  width: 2.6666666667rem;
 }
 .content-11 p:nth-child(1) {
   margin-top: 0.6666666667rem;

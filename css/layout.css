@@ -2,12 +2,11 @@
  * @Author: jecyu
  * @Date: 2017-12-11 4:49:47 pm 
  * @Modified By: jeCyu 
- * @Last Modified time: 2017-12-26 2:12:58 pm 
+ * @Last Modified time: 2017-12-27 2:55:21 pm 
  */
 html,
 body {
   font-family: "Microsoft YaHei", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  width: 100%;
   height: 100%;
   line-height: 1.5;
   background: #e6e6e6;
@@ -103,6 +102,11 @@ figure {
   width: 10rem;
 }
 
+.main {
+  /* Add a top margin to avoid content overlay */
+  margin-top: 1.44rem;
+}
+
 .clearfix::after {
   content: ".";
   visibility: hidden;
@@ -114,6 +118,11 @@ figure {
 /* nav */
 /* nav-bar */
 .common-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99999;
   height: 1.44rem;
   background: #e6e6e6;
 }
@@ -175,10 +184,15 @@ figure {
 }
 .nav-button .nav-brand {
   width: 1.8666666667rem;
+  text-align: center;
 }
 .nav-button .nav-brand img {
   width: 100%;
   height: 100%;
+}
+.nav-button .nav-cart {
+  width: 1.8666666667rem;
+  text-align: right;
 }
 
 /* footer */
@@ -319,7 +333,7 @@ figure {
 /* good choose*/
 .good-choose-container {
   width: 10rem;
-  padding: 0.4rem 0.5333333333rem 0 0.1333333333rem;
+  padding: 0.4rem 0.1333333333rem 0.4rem 0.1333333333rem;
   font-size: 20px;
   font-weight: 400;
   color: #234755;
@@ -331,13 +345,17 @@ figure {
 [data-dpr="3"] .good-choose-container {
   font-size: 60px;
 }
+.good-choose-container .item-title {
+  padding-left: 0.5333333333rem;
+  font-weight: 400;
+}
 
 .good-choose {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 10rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   height: 4.2666666667rem;
   margin-top: 0.5333333333rem;
   text-align: justify;

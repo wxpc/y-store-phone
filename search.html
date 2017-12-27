@@ -52,10 +52,9 @@
 	<link rel="stylesheet" type="text/css" href="css/search.css">
 	<title>搜索页面</title>
 	<script>
-
-		function clickA () {
+		function clickA() {
 			console.log("aaa");
-			document.getElementById("searchInput").value="";
+			document.getElementById("searchInput").value = "";
 		}
 	</script>
 </head>
@@ -83,33 +82,36 @@
         </div>
     </nav>
 </header>
-	<div class="banner">
-		<h2 class="banner-title">搜索</h2>
-	</div>
-	<section class="item-section">
-		<div class="search-wrapper">
-			<div class="search-content">
-				<div class="search-input-container">
-					<div class="user-close">
-						<i class="iconfont icon-close" onclick="clickA()"></i>
-					</div>
-					<div class="user-box">
-						<input id="searchInput" class="user-input" type="text" name="" value=""
-							placeholder="查找商品或者文章">
-					</div>
-					<div class="user-search">
-						<i class="iconfont icon-magnifier"></i>
+	<main class="main">
+
+		<div class="banner">
+			<h2 class="banner-title">搜索</h2>
+		</div>
+		<section class="item-section">
+			<div class="search-wrapper">
+				<div class="search-content">
+					<div class="search-input-container">
+						<div class="user-close">
+							<i class="iconfont icon-close" onclick="clickA()"></i>
+						</div>
+						<div class="user-box">
+							<input id="searchInput" class="user-input" type="text" name="" value="" placeholder="查找商品或者文章">
+						</div>
+						<div class="user-search">
+							<i class="iconfont icon-magnifier"></i>
+						</div>
 					</div>
 				</div>
+
+				<div class="view-all">
+					<a href="###">查看全部商品</a>
+				</div>
 			</div>
-			
-			<div class="view-all">
-				<a href="###">查看全部商品</a>
-			</div>
-		</div>
-		
-		<div class="footer-background"></div>
-	</section>
+
+			<div class="footer-background"></div>
+		</section>
+	</main>
+
 	<footer class="common-footer">
     <div class="footer-above">
         <div class="row website-link">
@@ -169,8 +171,7 @@
             <span class="iconfont icon-arrow_top"></span>
         </div>
     </div>
-</footer>
-	<script src="js/public/jquery.min.js"></script>
+</footer> <script src="js/public/jquery.min.js"></script>
 <script src="js/public/base.js"></script>
     <script src="js/public/swiper/swiper.js"></script>
 

@@ -2,7 +2,7 @@
  * @Author: jecyu
  * @Date: 2017-12-22 2:35:24 pm
  * @Modified By: jeCyu
- * @Last Modified time: 2017-12-25 6:28:33 pm
+ * @Last Modified time: 2017-12-27 10:41:35 am 
  */
 
 var page = {
@@ -44,6 +44,8 @@ var page = {
                 window.location = source;
             };
         }
+
+        // fullscreen
     }
 };
 
