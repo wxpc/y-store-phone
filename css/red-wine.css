@@ -2,7 +2,7 @@
  * @Author: jecyu
  * @Date: 2017-12-25 10:05:49 am 
  * @Modified By: jeCyu 
- * @Last Modified time: 2017-12-25 2:18:34 pm 
+ * @Last Modified time: 2017-12-29 6:44:59 pm 
  */
 .main {
   width: 10rem;
@@ -117,126 +117,86 @@
   background: #234755;
 }
 
-.last-content {
+.middle-content {
   width: 10rem;
   text-align: center;
   margin: 0 auto;
 }
 
-.content-pic {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 6.9333333333rem;
+.media-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.media-container .media-item {
   width: 10rem;
-  margin: 0 auto;
-}
-
-.content-pic .pic {
-  margin-top: 0.1333333333rem;
-  height: inherit;
-  width: 4.8rem;
-  background-size: 100% 100%;
-}
-
-.content-pic:nth-child(1) .pic:nth-child(1) {
-  margin-right: 0.0666666667rem;
-  margin-left: 0.1333333333rem;
-  background: url("../images/rw1.png") no-repeat;
-  background-size: 100% 100%;
-}
-.content-pic:nth-child(1) .pic:nth-child(2) {
   margin: 0.1333333333rem 0.1333333333rem 0 0.0666666667rem;
-  background: url("../images/rw2.png") no-repeat;
-  background-size: 100% 100%;
 }
-.content-pic:nth-child(3) .pic:nth-child(1) {
-  margin-right: 0.0666666667rem;
-  margin-left: 0.1333333333rem;
-  background: url("../images/rw3.png") no-repeat;
-  background-size: 100% 100%;
+.media-container:nth-child(1) {
+  margin-left: 0.0666666667rem;
 }
-.content-pic:nth-child(3) .pic:nth-child(2) {
-  margin: 0.1333333333rem 0.1333333333rem 0 0.0666666667rem;
-  background: url("../images/rw4.png") no-repeat;
-  background-size: 100% 100%;
+.media-container .item-figure {
+  position: relative;
+  border: 0;
+  margin-bottom: 0.2666666667rem;
 }
-.content-pic:nth-child(5) .pic:nth-child(1) {
-  margin-right: 0.0666666667rem;
-  margin-left: 0.1333333333rem;
-  background: url("../images/rw5.png") no-repeat;
-  background-size: 100% 100%;
+.media-container .item-figure .item-img {
+  width: 100%;
+  height: 100%;
 }
-.content-pic:nth-child(5) .pic:nth-child(2) {
-  margin: 0.1333333333rem 0.1333333333rem 0 0.0666666667rem;
-  background: url("../images/rw6.png") no-repeat;
-  background-size: 100% 100%;
-}
-
-.content-text {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 3.7333333333rem;
-  width: inherit;
+.media-container .item-figcation {
+  height: 2.4rem;
   margin: 0 auto;
   font-size: 12px;
 }
-[data-dpr="2"] .content-text {
+[data-dpr="2"] .media-container .item-figcation {
   font-size: 24px;
 }
-[data-dpr="3"] .content-text {
+[data-dpr="3"] .media-container .item-figcation {
   font-size: 36px;
 }
-.content-text .title {
+.media-container .item-figcation .title {
+  margin-top: 0.2666666667rem;
   font-size: 14px;
   margin: 0 0.1333333333rem;
   text-align: left;
 }
-[data-dpr="2"] .content-text .title {
+[data-dpr="2"] .media-container .item-figcation .title {
   font-size: 28px;
 }
-[data-dpr="3"] .content-text .title {
+[data-dpr="3"] .media-container .item-figcation .title {
   font-size: 42px;
 }
-.content-text .place {
+.media-container .item-figcation .place {
   font-size: 12px;
   margin: 0.1333333333rem 0.1333333333rem;
-  text-: left;
+  text-align: left;
 }
-[data-dpr="2"] .content-text .place {
+[data-dpr="2"] .media-container .item-figcation .place {
   font-size: 24px;
 }
-[data-dpr="3"] .content-text .place {
+[data-dpr="3"] .media-container .item-figcation .place {
   font-size: 36px;
 }
-.content-text .price {
+.media-container .item-figcation .price {
   font-size: 12px;
   margin: 0.1333333333rem 0.1333333333rem;
   text-align: left;
   color: #234755;
 }
-[data-dpr="2"] .content-text .price {
+[data-dpr="2"] .media-container .item-figcation .price {
   font-size: 24px;
 }
-[data-dpr="3"] .content-text .price {
+[data-dpr="3"] .media-container .item-figcation .price {
   font-size: 36px;
 }
-.content-text .price strong {
+.media-container .item-figcation .price strong {
   font-size: 16px;
 }
-[data-dpr="2"] .content-text .price strong {
+[data-dpr="2"] .media-container .item-figcation .price strong {
   font-size: 32px;
 }
-[data-dpr="3"] .content-text .price strong {
+[data-dpr="3"] .media-container .item-figcation .price strong {
   font-size: 48px;
-}
-
-.content-text div {
-  margin-top: 0.4rem;
-  height: inherit;
-  width: 450px;
-  padding: 0 0.2666666667rem;
 }

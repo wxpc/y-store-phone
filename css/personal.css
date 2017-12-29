@@ -2,7 +2,7 @@
  * @Author: jecyu
  * @Date: 2017-12-21 11:39:17 am 
  * @Modified By: jeCyu 
- * @Last Modified time: 2017-12-21 2:14:20 pm 
+ * @Last Modified time: 2017-12-29 5:09:21 pm 
  */
 .main {
   width: 10rem;
@@ -83,7 +83,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0.1333333333rem 0;
-  border-bottom: 0.0133333333rem solid #747474;
+  border-bottom: 0.04rem solid #747474;
   font-size: 16px;
 }
 [data-dpr="2"] .info-list .info-item {

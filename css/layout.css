@@ -2,7 +2,7 @@
  * @Author: jecyu
  * @Date: 2017-12-11 4:49:47 pm 
  * @Modified By: jeCyu 
- * @Last Modified time: 2017-12-27 2:55:21 pm 
+ * @Last Modified time: 2017-12-29 5:26:33 pm 
  */
 html,
 body {
@@ -50,6 +50,11 @@ figure {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+button {
+  border: 0;
+  background: transparent;
 }
 
 ul,
@@ -105,6 +110,33 @@ figure {
 .main {
   /* Add a top margin to avoid content overlay */
   margin-top: 1.44rem;
+}
+
+/* 1px border simulation */
+.transform-sacle {
+  position: relative;
+}
+.transform-sacle::after, .transform-sacle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  width: 100%;
+  -webkit-transform: scaleY(0.5);
+      -ms-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+  background: #f00;
+}
+.transform-sacle::after {
+  top: auto;
+  bottom: 0;
+  -webkit-transform-origin: 0 100%;
+      -ms-transform-origin: 0 100%;
+          transform-origin: 0 100%;
 }
 
 .clearfix::after {
@@ -183,8 +215,12 @@ figure {
   cursor: pointer;
 }
 .nav-button .nav-brand {
-  width: 1.8666666667rem;
+  width: 2.1333333333rem;
   text-align: center;
+}
+.nav-button .nav-brand a {
+  width: inherit;
+  height: inherit;
 }
 .nav-button .nav-brand img {
   width: 100%;
@@ -202,7 +238,7 @@ figure {
   /* toTop */
 }
 .common-footer .footer-above {
-  padding: 0.9333333333rem 0.8rem 0.6666666667rem 0.8rem;
+  padding: 0.9333333333rem 0.6666666667rem 0.6666666667rem 0.6666666667rem;
   font-size: 12px;
 }
 [data-dpr="2"] .common-footer .footer-above {
@@ -249,7 +285,7 @@ figure {
       -ms-flex-pack: distribute;
           justify-content: space-around;
   padding-bottom: 0.4rem;
-  border-bottom: 0.0133333333rem solid #373737;
+  border-bottom: 0.04rem solid #373737;
   font-size: 14px;
   color: #959595;
 }
@@ -263,19 +299,29 @@ figure {
   height: 0.6666666667rem;
   line-height: 0.6666666667rem;
 }
+.website-link .link-list .link-item:nth-of-type(1) .iconfont {
+  font-size: 20px;
+  margin-right: 0.1333333333rem;
+}
+[data-dpr="2"] .website-link .link-list .link-item:nth-of-type(1) .iconfont {
+  font-size: 40px;
+}
+[data-dpr="3"] .website-link .link-list .link-item:nth-of-type(1) .iconfont {
+  font-size: 60px;
+}
 .website-link .link-list .link-item span {
   vertical-align: middle;
 }
 .website-link .link-list .link-item .iconfont {
-  font-size: 22px;
+  font-size: 28px;
   vertical-align: middle;
-  margin-right: 0.1333333333rem;
+  margin-right: 0.4rem;
 }
 [data-dpr="2"] .website-link .link-list .link-item .iconfont {
-  font-size: 44px;
+  font-size: 56px;
 }
 [data-dpr="3"] .website-link .link-list .link-item .iconfont {
-  font-size: 66px;
+  font-size: 84px;
 }
 .website-link .link-list .link-item + .link-item {
   margin-top: 0.6666666667rem;
@@ -286,9 +332,17 @@ figure {
 
 .statement {
   margin-top: 0.4533333333rem;
-  padding: 0 0.8rem;
+  padding: 0 0.32rem;
 }
 .statement .copyright {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 12px;
   text-align: justify;
   color: #9b9b9b;
@@ -371,7 +425,7 @@ figure {
 .good-choose div:nth-child(2) {
   width: 5.3333333333rem;
   height: 4.2666666667rem;
-  border-bottom: 0.0133333333rem solid #747474;
+  border-bottom: 0.04rem solid #747474;
   margin-left: 0.4rem;
 }
 

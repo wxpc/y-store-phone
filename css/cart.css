@@ -2,7 +2,7 @@
  * @Author: jecyu
  * @Date: 2017-12-19 4:42:58 pm 
  * @Modified By: jeCyu 
- * @Last Modified time: 2017-12-23 10:25:53 am 
+ * @Last Modified time: 2017-12-29 5:29:01 pm 
  */
 .main {
   width: 10rem;
@@ -104,15 +104,15 @@ label {
   vertical-align: middle;
 }
 
-.item-section:nth-child(2) {
+.item-section:nth-child(3) {
   padding-bottom: 1.3333333333rem;
 }
 
-.item-section:nth-child(3) {
+.item-section:nth-child(4) {
   padding-bottom: 0.64rem;
 }
 
-.item-section:nth-child(4) {
+.item-section:nth-child(5) {
   padding-bottom: 0.64rem;
   padding-top: 0.5333333333rem;
 }
@@ -121,7 +121,7 @@ label {
 .flag {
   display: table;
   padding: 0.7466666667rem 0;
-  border-bottom: 0.0133333333rem solid #747474;
+  border-bottom: 0.04rem solid #747474;
 }
 .flag .flag-head {
   display: -webkit-box;
@@ -183,7 +183,7 @@ label {
   width: 100%;
 }
 .flag-item .flag-price .count {
-  width: 2rem;
+  width: 2.1333333333rem;
   height: 0.56rem;
   padding-left: 0.2666666667rem;
   color: #747474;
@@ -207,13 +207,13 @@ label {
   display: table;
   width: 100%;
   padding-top: 0.5333333333rem;
-  font-size: 12px;
+  font-size: 14px;
 }
 [data-dpr="2"] .subtotal-orders {
-  font-size: 24px;
+  font-size: 28px;
 }
 [data-dpr="3"] .subtotal-orders {
-  font-size: 36px;
+  font-size: 42px;
 }
 .subtotal-orders .item {
   display: -webkit-box;
@@ -228,7 +228,7 @@ label {
 .subtotal-orders .thead,
 .subtotal-orders .tbody,
 .subtotal-orders .tfoot {
-  border-bottom: 0.0133333333rem solid #747474;
+  border-bottom: 0.04rem solid #747474;
 }
 .subtotal-orders .thead {
   padding-bottom: 0.1333333333rem;
@@ -275,26 +275,26 @@ label {
   display: inline-block;
   width: 4.1333333333rem;
   height: 1.0666666667rem;
-  border: 0.0133333333rem solid #234755;
+  border: 0.04rem solid #234755;
   color: #234755;
   line-height: 1.0666666667rem;
 }
 
 /* nessary-introduction */
 .nessary-introduction {
-  font-size: 12px;
+  font-size: 14px;
   color: #b4b4b4;
 }
 [data-dpr="2"] .nessary-introduction {
-  font-size: 24px;
+  font-size: 28px;
 }
 [data-dpr="3"] .nessary-introduction {
-  font-size: 36px;
+  font-size: 42px;
 }
 
 .nessary-item:not(:last-child) {
   padding: 0.56rem 0;
-  border-bottom: 0.0133333333rem solid #b4b4b4;
+  border-bottom: 0.04rem solid #b4b4b4;
 }
 .nessary-item:last-child {
   padding-top: 0.56rem;

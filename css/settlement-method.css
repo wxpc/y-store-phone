@@ -2,7 +2,7 @@
  * @Author: jecyu
  * @Date: 2017-12-19 4:42:58 pm 
  * @Modified By: jeCyu 
- * @Last Modified time: 2017-12-21 11:38:44 am 
+ * @Last Modified time: 2017-12-29 5:08:12 pm 
  */
 .main {
   width: 10rem;
@@ -40,7 +40,7 @@
   font-size: 54px;
 }
 .banner .banner-title::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -40%;
   left: 50%;
@@ -107,7 +107,7 @@ label {
 /* method-list */
 .method-item {
   padding-bottom: 1.1466666667rem;
-  border-bottom: 0.0133333333rem solid #747474;
+  border-bottom: 0.04rem solid #747474;
 }
 .method-item + .method-item {
   margin-top: 0.8rem;
@@ -169,7 +169,7 @@ label {
   width: 100%;
   height: 1.0666666667rem;
   padding-left: 0.2666666667rem;
-  border: 0.0133333333rem solid #747474;
+  border: 0.04rem solid #747474;
   color: #747474;
   outline: none;
 }
