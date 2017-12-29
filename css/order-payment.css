@@ -2,7 +2,7 @@
  * @Author: jecyu
  * @Date: 2017-12-25 3:43:39 pm 
  * @Modified By: jeCyu 
- * @Last Modified time: 2017-12-26 5:51:29 pm 
+ * @Last Modified time: 2017-12-29 5:30:57 pm 
  */
 .main {
   width: 10rem;
@@ -76,7 +76,7 @@
   width: inherit;
   height: 1.3333333333rem;
   margin: 0 auto;
-  border-bottom: 0.0266666667rem solid #d2d2d2;
+  border-bottom: 0.04rem solid #d2d2d2;
   text-align: center;
   font-size: 20px;
 }
@@ -210,8 +210,8 @@
 .content-10 {
   width: 100%;
   height: 2.1333333333rem;
-  margin: 0.6666666667rem auto;
-  border-bottom: 0.0266666667rem solid #b4b4b4;
+  margin: 0.8rem auto;
+  border-bottom: 0.04rem solid #b4b4b4;
 }
 .content-10 button {
   width: 100%;
@@ -231,13 +231,14 @@
 
 .content-11 {
   width: 100%;
-  height: 3.3333333333rem;
+  min-height: 3.3333333333rem;
   margin: 0.4rem auto;
   padding-bottom: 0.6666666667rem;
-  border-bottom: 0.0266666667rem solid #b4b4b4;
+  border-bottom: 0.04rem solid #b4b4b4;
   font-size: 14px;
   color: #747474;
   font-weight: 300;
+  /* order total */
 }
 [data-dpr="2"] .content-11 {
   font-size: 28px;
@@ -246,19 +247,14 @@
   font-size: 42px;
 }
 .content-11 .item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin-top: 0.2666666667rem;
 }
-.content-11 .item .item-count,
-.content-11 .item .item-total {
+.content-11 .item .item-title {
+  width: 2rem;
+}
+.content-11 dd,
+.content-11 dt {
   display: inline-block;
-  width: 2.6666666667rem;
 }
 .content-11 p:nth-child(1) {
   margin-top: 0.6666666667rem;
@@ -274,7 +270,7 @@
 .flag {
   display: table;
   padding: 0.7466666667rem 0;
-  border-bottom: 0.0133333333rem solid #747474;
+  border-bottom: 0.04rem solid #747474;
 }
 .flag .flag-head {
   display: -webkit-box;
@@ -336,9 +332,9 @@
   width: 100%;
 }
 .flag-item .flag-price .count {
-  width: 2rem;
+  width: 2.4rem;
   height: 0.56rem;
-  padding-left: 0.2666666667rem;
+  padding: 0 0 0 0.2666666667rem;
   color: #747474;
 }
 .flag-item .flag-price strong {
@@ -360,13 +356,13 @@
   display: table;
   width: 100%;
   padding-top: 0.5333333333rem;
-  font-size: 12px;
+  font-size: 14px;
 }
 [data-dpr="2"] .subtotal-orders {
-  font-size: 24px;
+  font-size: 28px;
 }
 [data-dpr="3"] .subtotal-orders {
-  font-size: 36px;
+  font-size: 42px;
 }
 .subtotal-orders .item {
   display: -webkit-box;
@@ -381,7 +377,7 @@
 .subtotal-orders .thead,
 .subtotal-orders .tbody,
 .subtotal-orders .tfoot {
-  border-bottom: 0.0133333333rem solid #747474;
+  border-bottom: 0.04rem solid #747474;
 }
 .subtotal-orders .thead {
   padding-bottom: 0.1333333333rem;
