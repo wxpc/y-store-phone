@@ -2,7 +2,7 @@
  * @Author: jecyu
  * @Date: 2017-12-23 4:02:46 pm 
  * @Modified By: jeCyu 
- * @Last Modified time: 2018-01-04 4:43:46 pm 
+ * @Last Modified time: 2018-01-04 5:23:03 pm 
  */
 .main {
     width: 10rem;
@@ -117,5 +117,5 @@
 }
 
 .content-5 {
-    padding: 0.2rem;
+    padding: 0.2rem 0.65rem;
 }
