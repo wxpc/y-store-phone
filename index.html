@@ -44,8 +44,8 @@
     <!-- IOS图标 -->
     <!-- apple-touch-icon 图片自动处理成圆角和高光等效果 -->
 
-    <!-- <link rel="apple-touch-icon" href="favicon.png">
-    <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon"> -->
+    <link rel="apple-touch-icon" href="favicon.png">s
+    <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/fonts/iconfont.css">
     <link rel="stylesheet" href="css/swiper/swiper.css">
     <link rel="stylesheet" href="css/layout.css">
@@ -61,7 +61,7 @@
                     <a class="nav-collaspe" href="navigation.html">
                         <i class="iconfont icon-rows"></i>
                     </a>
-                    <a class="nav-search" href="search.html">
+                    <a id="nav-search" class="nav-search" href="###">
                         <i class="iconfont icon-magnifier"></i>
                     </a>
                 </div>
@@ -70,10 +70,14 @@
                         <img src="images/site-logo.png" alt="site logo">
                     </a>
                 </div>
+                <a class="nav-login" href="login.html">
+                    <i class="iconfont icon-account"></i>
+                </a>
                 <a class="nav-cart" href="login.html">
                     <i class="iconfont icon-cc-cart"></i>
                 </a>
             </div>
+
         </nav>
     </header>
     <div class="swiper-outer-wrapper">
@@ -134,38 +138,62 @@
     </div>
     <main class="main">
         <section class="item-section product-area">
-            <ul class="product-area-list">
-                <li class="product-area-item">
-                    <a class="area-media" href="place.html">
-                        <div class="media-figure figure-1">
-                            <img src="images/icon-6.png" alt="">
-                        </div>
-                        <div class="media-figcaption">
-                            <h3>澳洲产地</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="product-area-item">
-                    <a class="area-media" href="place.html">
-                        <div class="media-figure figure-2">
-                            <img src="images/icon-7.png" alt="">
-                        </div>
-                        <div class="media-figcaption">
-                            <h3>葡萄牙产地</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="product-area-item">
-                    <a class="area-media" href="place.html">
-                        <div class="media-figure figure-3">
-                            <img src="images/icon-2.png" alt="">
-                        </div>
-                        <div class="media-figcaption">
-                            <h3>其他产地</h3>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+
+            <div class="swiper-container-2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a class="area-item" href="place.html">
+                            <div class="item-figure small">
+                                <img src="images/icon-6.png" alt="">
+                            </div>
+                            <div class="item-figcaption">
+                                <h3>澳洲</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="area-item" href="place.html">
+                            <div class="item-figure">
+                                <img src="images/icon-7.png" alt="">
+                            </div>
+                            <div class="item-figcaption">
+                                <h3>法国</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="area-item" href="place.html">
+                            <div class="item-figure">
+                                <img src="images/icon-4.png" alt="">
+                            </div>
+                            <div class="item-figcaption">
+                                <h3>西班牙</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide product-area-item">
+                        <a class="area-item" href="place.html">
+                            <div class="item-figure">
+                                <img src="images/icon-1.png" alt="">
+                            </div>
+                            <div class="item-figcaption">
+                                <h3>意大利</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide product-area-item">
+                        <a class="area-item" href="place.html">
+                            <div class="item-figure">
+                                <img src="images/icon-2.png" alt="">
+                            </div>
+                            <div class="item-figcaption">
+                                <h3>其他</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
         </section>
         <section class="item-section">
             <a class="media" href="red-wine.html">
@@ -311,6 +339,7 @@
     <script src="js/public/jquery.min.js"></script>
     <script src="js/public/base.js"></script>
     <script src="js/public/swiper/swiper.js"></script>
+    <script src="js/public/search-popup.js"></script>
     <script src="js/index.js"></script>
 
 </body>

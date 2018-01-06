@@ -2,7 +2,7 @@
  * @Author: jecyu
  * @Date: 2017-12-11 4:49:47 pm 
  * @Modified By: jeCyu 
- * @Last Modified time: 2017-12-29 5:26:33 pm 
+ * @Last Modified time: 2018-01-06 9:20:04 am 
  */
 html,
 body {
@@ -173,6 +173,7 @@ figure {
 }
 
 .nav-button {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -229,6 +230,86 @@ figure {
 .nav-button .nav-cart {
   width: 1.8666666667rem;
   text-align: right;
+}
+.nav-button .nav-login {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  right: 1.0666666667rem;
+  width: 1.8666666667rem;
+  text-align: right;
+}
+
+/* nav-search */
+.bubble {
+  position: relative;
+  border: 0.04rem solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.1066666667rem;
+  background: #fff;
+  -webkit-box-shadow: 0.04rem 0.04rem 0.04rem 0.04rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0.04rem 0.04rem 0.04rem 0.04rem rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.bubble:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0.2666666667rem;
+  top: -0.2133333333rem;
+  border-left: 0.2133333333rem solid transparent;
+  border-right: 0.2133333333rem solid transparent;
+  border-bottom: 0.2133333333rem solid #c0c0c0;
+}
+
+.search {
+  background-size: 0.5333333333rem 0.5333333333rem;
+  padding-left: 0.5333333333rem;
+  min-height: 0.4266666667rem;
+  margin-top: 0.1066666667rem;
+  margin-left: 0.1066666667rem;
+}
+.search .iconfont {
+  display: inline-block;
+  margin-left: 0.5333333333rem;
+  font-size: 18px;
+  color: #747474;
+}
+[data-dpr="2"] .search .iconfont {
+  font-size: 36px;
+}
+[data-dpr="3"] .search .iconfont {
+  font-size: 54px;
+}
+
+.search::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0.2666666667rem;
+  top: -0.16rem;
+  border-left: 0.1866666667rem solid transparent;
+  border-right: 0.1866666667rem solid transparent;
+  border-bottom: 0.1866666667rem solid #fff;
+}
+
+.search input {
+  display: inline-block;
+  width: 80%;
+  font-size: 20px;
+  border: 0;
+  margin-top: 0.2133333333rem;
+  color: #666;
+}
+[data-dpr="2"] .search input {
+  font-size: 40px;
+}
+[data-dpr="3"] .search input {
+  font-size: 60px;
 }
 
 /* footer */

@@ -44,13 +44,14 @@
     <!-- IOS图标 -->
     <!-- apple-touch-icon 图片自动处理成圆角和高光等效果 -->
 
-    <!-- <link rel="apple-touch-icon" href="favicon.png">
-    <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon"> -->
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/fonts/iconfont.css">
     <link rel="stylesheet" href="css/swiper/swiper.css">
     <link rel="stylesheet" href="css/layout.css">
     <title>文章</title>
     <link rel="stylesheet" type="text/css" href="css/article.css">
+    <link rel="stylesheet" href="css/nativeShare/nativeShare.css">
 </head>
 
 <body>
@@ -61,7 +62,7 @@
                     <a class="nav-collaspe" href="navigation.html">
                         <i class="iconfont icon-rows"></i>
                     </a>
-                    <a class="nav-search" href="search.html">
+                    <a id="nav-search" class="nav-search" href="###">
                         <i class="iconfont icon-magnifier"></i>
                     </a>
                 </div>
@@ -70,10 +71,14 @@
                         <img src="images/site-logo.png" alt="site logo">
                     </a>
                 </div>
+                <a class="nav-login" href="login.html">
+                    <i class="iconfont icon-account"></i>
+                </a>
                 <a class="nav-cart" href="login.html">
                     <i class="iconfont icon-cc-cart"></i>
                 </a>
             </div>
+
         </nav>
     </header>
     <main class="main">
@@ -97,11 +102,14 @@
                             </span>
                         </p>
                         <p class="p2">好文章，点个赞</p>
+                        <!-- JiaThis Button BEGIN -->
+                        <!-- <div class="jiathis_style_m"></div>
+						<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_m.js" charset="utf-8"></script> -->
+                        <!-- JiaThis Button END -->
                     </div>
                 </div>
-                <div class="f-content"></div>
-                <div class="content-5">
-                    <span class="view-more">浏览更多文章</span>
+                <div class="view-more">
+                    <span class="">浏览更多文章</span>
                     <span>></span>
                 </div>
             </article>
@@ -209,6 +217,9 @@
     <script src="js/public/jquery.min.js"></script>
     <script src="js/public/base.js"></script>
     <script src="js/public/swiper/swiper.js"></script>
+    <script src="js/public/search-popup.js"></script>
+    <script src="js/public/nativeShare/nativeShare.js"></script>
+
 </body>
 
 </html>
