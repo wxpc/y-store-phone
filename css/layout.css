@@ -2,7 +2,7 @@
  * @Author: jecyu
  * @Date: 2017-12-11 4:49:47 pm 
  * @Modified By: jeCyu 
- * @Last Modified time: 2018-01-06 9:20:04 am 
+ * @Last Modified time: 2018-01-06 11:14:27 am 
  */
 html,
 body {
@@ -243,6 +243,10 @@ figure {
 }
 
 /* nav-search */
+.searchBox-container {
+  background: #ccc;
+}
+
 .bubble {
   position: relative;
   border: 0.04rem solid rgba(0, 0, 0, 0.5);
