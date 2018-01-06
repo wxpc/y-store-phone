@@ -2,7 +2,7 @@
  * @Author: jecyu
  * @Date: 2017-12-22 2:35:24 pm
  * @Modified By: jeCyu
- * @Last Modified time: 2017-12-27 10:41:35 am 
+ * @Last Modified time: 2018-01-05 2:47:04 pm 
  */
 
 var page = {
@@ -33,6 +33,16 @@ var page = {
             scrollbar: {
                 el: ".swiper-scrollbar"
             }
+        });
+
+        var swiper_product_Area = new Swiper(".swiper-container-2", {
+            autoplay: {
+                delay: 10000
+            },
+            simulateTouch: true,
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 0
         });
 
         // 找到card，取得href属性

@@ -43,9 +43,9 @@
     <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
     <!-- IOS图标 -->
     <!-- apple-touch-icon 图片自动处理成圆角和高光等效果 -->
-    <!-- 
+
     <link rel="apple-touch-icon" href="favicon.png">
-    <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon"> -->
+    <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/fonts/iconfont.css">
     <link rel="stylesheet" href="css/swiper/swiper.css">
     <link rel="stylesheet" href="css/layout.css">
@@ -62,7 +62,7 @@
                     <a class="nav-collaspe" href="navigation.html">
                         <i class="iconfont icon-rows"></i>
                     </a>
-                    <a class="nav-search" href="search.html">
+                    <a id="nav-search" class="nav-search" href="###">
                         <i class="iconfont icon-magnifier"></i>
                     </a>
                 </div>
@@ -71,16 +71,20 @@
                         <img src="images/site-logo.png" alt="site logo">
                     </a>
                 </div>
+                <a class="nav-login" href="login.html">
+                    <i class="iconfont icon-account"></i>
+                </a>
                 <a class="nav-cart" href="login.html">
                     <i class="iconfont icon-cc-cart"></i>
                 </a>
             </div>
+
         </nav>
     </header>
-    <div class="banner">
-        <h2 class="banner-title">新会员注册</h2>
-    </div>
     <main class="main">
+        <div class="banner">
+            <h2 class="banner-title">新会员注册</h2>
+        </div>
         <section class="item-section">
             <div class="settlement-method">
                 <ul class="method-list">
@@ -99,11 +103,11 @@
                                 </div>
                                 <div class="user-item">
                                     <label class="user-label" for="password_vip">密码</label>
-                                    <input class="user-input" id="password_vip" type="text" placeholder="至少六个字符、必须含有数字和字母">
+                                    <input class="user-input" id="password_vip" type="password" placeholder="至少六个字符、必须含有数字和字母">
                                 </div>
                                 <div class="user-item">
                                     <label class="user-label" for="passwordConfirm">确认密码</label>
-                                    <input class="user-input" id="passwordConfirm" type="text" placeholder="至少六个字符、必须含有数字和字母">
+                                    <input class="user-input" id="passwordConfirm" type="password" placeholder="至少六个字符、必须含有数字和字母">
                                 </div>
                                 <div class="user-policy">
                                     <input class="user-input" id="" type="checkbox">
@@ -189,6 +193,7 @@
     <script src="js/public/jquery.min.js"></script>
     <script src="js/public/base.js"></script>
     <script src="js/public/swiper/swiper.js"></script>
+    <script src="js/public/search-popup.js"></script>
     <script src="js/settlement-method.js"></script>
 </body>
 
