@@ -2,13 +2,14 @@
  * @Author: jecyu
  * @Date: 2018-01-05 5:55:30 pm
  * @Modified By: jeCyu
- * @Last Modified time: 2018-01-06 9:28:58 am
+ * @Last Modified time: 2018-01-06 11:18:44 am
  */
 /**  
     1.Click on the Search button
     2.Make a DIV with content appear when I click on the Search button
     3.Make the DIV disappear if I click on the search button again
     4.Style the DIV so it looks like a talk bubble 
+    5. 点击周围，也删除搜索框 // 需要为searchbox添加一层outter
 */
 
 /**
@@ -21,7 +22,7 @@ My.Searchbox = {
             .css({ cursor: "pointer" })
             .click(My.Searchbox.ClickHandler);
     },
-    // 点击周围，也删除搜索框
+    // 点击周围，也删除搜索框 // 需要
     // Close: function delSearch(id) {
 
     // },
@@ -47,7 +48,7 @@ My.Searchbox = {
         var height = 1.5;
 
         // // 如果没有任何搜索框，就创建一个
-        var srch = CreateDiv("searchBox", "bubble", left, top, width, height);
+        var srch = CreateDiv(id, "bubble", left, top, width, height);
         srch.html(
             "<div class='search'><input type='text' name='search' placeholder='搜索文章或商品'><i class='iconfont icon-magnifier'></i></div>"
         );
@@ -73,10 +74,10 @@ My.Utils = {
 
 $(document).ready(function() {
     My.Searchbox.Register("#nav-search");
-    $(document).click(function del() {
-        if ($("#" + "searchBox").length > 0) {
-            $("#" + "searchBox").remove();
-            return;
-        }
-    });
+    // $(".searchBox-container").click(function del() {
+    //     if ($(".searchBox-container").length > 0) {
+    //         $(".searchBox-container").remove();
+    //         return;
+    //     }
+    // });
 });

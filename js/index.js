@@ -2,7 +2,7 @@
  * @Author: jecyu
  * @Date: 2017-12-22 2:35:24 pm
  * @Modified By: jeCyu
- * @Last Modified time: 2018-01-05 2:47:04 pm 
+ * @Last Modified time: 2018-01-06 12:21:28 pm
  */
 
 var page = {
@@ -50,9 +50,9 @@ var page = {
         for (var i = 0, len = cards.length; i < len; i++) {
             var source = cards[i].getAttribute("data-href");
             console.log(source);
-            cards[i].onclick = function() {
+            cards[i].addEventListener("click", function() {
                 window.location = source;
-            };
+            });
         }
 
         // fullscreen
